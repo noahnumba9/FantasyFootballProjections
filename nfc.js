@@ -17,13 +17,31 @@ const phi = document.getElementById("PHI");
 const wsh = document.getElementById("WSH");
 
 async function getNFCEProjections() {
+
+    let data = {}
+
+    try {
+
 	const response = await fetch(url, options);
 	const data = await response.json();
+
     dal.innerHTML += (data.body.teamDefenseProjections[9].fantasyPointsDefault);
     nyg.innerHTML += (data.body.teamDefenseProjections[24].fantasyPointsDefault);
     phi.innerHTML += (data.body.teamDefenseProjections[27].fantasyPointsDefault);
     wsh.innerHTML += (data.body.teamDefenseProjections[32].fantasyPointsDefault);
+
+    } catch (error) {
+
+        dal.innerHTML += "Error getting data :(";
+        nyg.innerHTML += "Error getting data :(";
+        phi.innerHTML += "Error getting data :(";
+        wsh.innerHTML += "Error getting data :(";
+    
+
+    }
+
 };
+
 
 getNFCEProjections();
 
@@ -35,12 +53,28 @@ const gb = document.getElementById("GB");
 const min = document.getElementById("MIN");
 
 async function getNFCNProjections() {
+
+    let data = {}
+
+    try {
+
 	const response = await fetch(url, options);
 	const data = await response.json();
+
     chi.innerHTML += (data.body.teamDefenseProjections[6].fantasyPointsDefault);
     det.innerHTML += (data.body.teamDefenseProjections[11].fantasyPointsDefault);
     gb.innerHTML += (data.body.teamDefenseProjections[12].fantasyPointsDefault);
     min.innerHTML += (data.body.teamDefenseProjections[21].fantasyPointsDefault);
+    
+    } catch (error) {
+
+        chi.innerHTML += "Error getting data :(";
+        det.innerHTML += "Error getting data :(";
+        gb.innerHTML  += "Error getting data :(";
+        min.innerHTML += "Error getting data :(";
+
+    }
+
 };
 
 getNFCNProjections();
@@ -53,12 +87,28 @@ const no = document.getElementById("NO");
 const tb = document.getElementById("TB");
 
 async function getNFCSProjections() {
-	const response = await fetch(url, options);
-	const data = await response.json();
+
+	let data = {}
+
+    try {
+
+        const response = await fetch(url, options);
+        data = await response.json()
+
     atl.innerHTML += (data.body.teamDefenseProjections[2].fantasyPointsDefault);
     car.innerHTML += (data.body.teamDefenseProjections[5].fantasyPointsDefault);
     no.innerHTML += (data.body.teamDefenseProjections[23].fantasyPointsDefault);
     tb.innerHTML += (data.body.teamDefenseProjections[30].fantasyPointsDefault);
+
+        } catch (error) {
+
+
+    atl.innerHTML += "Error getting data :(";
+    car.innerHTML += "Error getting data :(";
+    no.innerHTML  += "Error getting data :(";
+    tb.innerHTML  += "Error getting data :(";
+    }
+    
 };
 
 getNFCSProjections();
@@ -71,12 +121,26 @@ const sf = document.getElementById("SF");
 const sea = document.getElementById("SEA");
 
 async function getNFCWProjections() {
-	const response = await fetch(url, options);
-	const data = await response.json();
+
+    let data = {}
+
+    try {
+
+	    const response = await fetch(url, options);
+	    const data = await response.json();
+
     ari.innerHTML += (data.body.teamDefenseProjections[1].fantasyPointsDefault);
     lar.innerHTML += (data.body.teamDefenseProjections[19].fantasyPointsDefault);
     sf.innerHTML += (data.body.teamDefenseProjections[28].fantasyPointsDefault);
     sea.innerHTML += (data.body.teamDefenseProjections[29].fantasyPointsDefault);
+
+    } catch (error) {
+
+        ari.innerHTML += "Error getting data :(";
+        lar.innerHTML += "Error getting data :(";
+        sf.innerHTML  += "Error getting data :(";
+        sea.innerHTML += "Error getting data :(";
+    } 
 };
 
 getNFCWProjections();
