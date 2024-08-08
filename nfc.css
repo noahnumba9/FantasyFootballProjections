@@ -63,10 +63,10 @@ nav > ul > li > a:hover {
 .nfc-divisions {
     background: #4b4f52;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     margin: auto;
     padding: 10px;
-    justify-items: center;
+    align-items: center;
     
 }
 

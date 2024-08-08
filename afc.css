@@ -67,8 +67,8 @@ nav > ul > li > a:hover {
 .afc-divisions {
     background: #4b4f52;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 10px;
 }
