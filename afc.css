@@ -68,7 +68,7 @@ nav > ul > li > a:hover {
     background: #4b4f52;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: left;
+    justify-content: center;
     margin: 0;
     padding: 10px;
 }
@@ -101,4 +101,11 @@ nav > ul > li > a:hover {
 }
 .contact-content {
     color: white ;
+}
+
+@media screen and (max-width: 600px ) {
+    nav > ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
