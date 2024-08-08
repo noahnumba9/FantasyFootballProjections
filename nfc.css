@@ -67,20 +67,18 @@ nav > ul > li > a:hover {
     margin: auto;
     padding: 10px;
     align-items: center;
-    
+    font-size: larger;
 }
 
 .nfc-divisions p {
     color: whitesmoke;
     font-weight: bolder;
     text-shadow: -1px 1px 2px blue;
-    margin-left: 10px;
 }
 
 .nfc-divisions h1 {
     color: black;
     text-shadow: -1px 1px 2px blue;
-    margin-left: 10px;
 }
 
 .contact-container {
