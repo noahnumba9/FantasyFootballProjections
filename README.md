@@ -7,7 +7,7 @@ then displayed it on the disired page.
 I analyzed the array obejct returned from the API & and targeted certain index's for each 
 grouping of teams.
 
-I displayed the teams that finished top five point projections heading into next season
+I displayed the teams that finished top five in point projections heading into next season
 using Chart.js
 
 ## Installation
