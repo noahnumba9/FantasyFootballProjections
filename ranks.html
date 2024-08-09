@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Defense Wins Championships!</title>
-
     <link rel="stylesheet" href="ranks.css"/>
 </head>
 
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
     <section class="header-container">
 
         <header class="header-content">
@@ -43,3 +43,32 @@
             Below will be a graph of the teams with the 5 highest Projected fantasy points heading into next season.</p>
         </div>
     </section>
+
+    <div class="topFive">
+        <canvas id = "myChart"></canvas>
+    </div>    
+
+    <script>
+        let myChart = document.getElementById('topFive').getContext('2d');
+
+        let topRanks = new Chart(myChart, {
+            type: 'bar',
+            data: {
+                labels:['Jets', 'Cowboys', '49ers', 'Ravens', 'Chiefs'],
+                datasets:[{
+                    label:'Fantasy Points',
+                    data:[
+                        115,
+                        114,
+                        112,
+                        112,
+                        110
+                    ]
+                }]
+            },
+            options:{}
+        });
+    </script>
+
+</body>
+</html>
