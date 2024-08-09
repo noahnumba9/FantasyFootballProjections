@@ -10,7 +10,6 @@
 
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
     <section class="header-container">
 
         <header class="header-content">
@@ -44,31 +43,13 @@
         </div>
     </section>
 
+    <section>
     <div class="topFive">
-        <canvas id = "myChart"></canvas>
-    </div>    
+        <canvas id="myChart"></canvas>
+    </div>   
+    </section> 
 
-    <script>
-        let myChart = document.getElementById('topFive').getContext('2d');
-
-        let topRanks = new Chart(myChart, {
-            type: 'bar',
-            data: {
-                labels:['Jets', 'Cowboys', '49ers', 'Ravens', 'Chiefs'],
-                datasets:[{
-                    label:'Fantasy Points',
-                    data:[
-                        115,
-                        114,
-                        112,
-                        112,
-                        110
-                    ]
-                }]
-            },
-            options:{}
-        });
-    </script>
-
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js></script>
+    <script type="text/javascript" src="ranks.js"></script>
 </body>
 </html>

@@ -84,6 +84,8 @@ nav > ul {
     font-size: 1.1rem;
 }
 
+
+
 @media screen and (max-width: 600px ) {
     nav > ul {
         flex-direction: column;
