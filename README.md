@@ -3,7 +3,7 @@
 
 In this web application I will be showcasing the Defensive Fantasy Point Projections for all 32 NFL teams for the upcoming 2024 NFL season.
 
-# Functionallity
+# Functionality
 
 1. I used an array to store & retrieve the data of the top 5 fantasy point teams to display them in my web application.
 
